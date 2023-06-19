@@ -21,6 +21,10 @@ const connect = () => {
   }
 };
 
+app.get("/", (req, res) => {
+  res.send("Welcome");
+});
+
 app.use("/tasks", postRouter);
 
 app.listen(port, () => {
